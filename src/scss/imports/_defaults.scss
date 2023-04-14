@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    font-weight: 500, 700, 800;
+    font-display: swap;
+}
+
+:root {
+    --font-family: "Hanken Grotesk", sans-serif;
+
+    --font-color: var(--light-lavender);
+    --error-color: var(--light-red);
+    --background-color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+    font-weight: 700;
+}

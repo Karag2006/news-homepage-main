@@ -1,0 +1,7 @@
+@import url("./imports/index.scss");
+
+@mixin breakpoint {
+    @media (min-width: 800px) {
+        @content;
+    }
+}
