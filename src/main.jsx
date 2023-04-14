@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import App from './Pages/App.jsx'
 import {Footer} from './Components'
 import './scss/style.scss'
 

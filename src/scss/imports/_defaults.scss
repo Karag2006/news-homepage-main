@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "Hanken Grotesk";
-    src: url("../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
-    font-weight: 500, 700, 800;
+    font-family: "Inter";
+    src: url("../../assets/fonts/Inter-VariableFont_slnt_wght.ttf");
+    font-weight: 400, 700, 800;
     font-display: swap;
 }
 
 :root {
-    --font-family: "Hanken Grotesk", sans-serif;
+    --font-family: "Inter", sans-serif;
 
-    --font-color: var(--light-lavender);
-    --error-color: var(--light-red);
+    --font-color: var(--greyish-blue);
+    --error-color: red;
     --background-color: white;
 }
 
@@ -41,7 +41,7 @@ img {
 
 body {
     font-family: var(--font-family);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--font-color);
     background-color: var(--background-color);
 }
