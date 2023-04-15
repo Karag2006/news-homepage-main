@@ -7,9 +7,159 @@
 }
 
 body {
-    @include breakpoint {
-        display: grid;
-        place-content: center;
-        min-height: 100vh;
+    margin: 1rem;
+}
+
+h1 {
+    margin-block-start: 1.5rem;
+
+    line-height: 3.2rem;
+    font-size: 3rem;
+    font-weight: 800;
+
+    color: var(--very-dark-blue);
+}
+
+p {
+    margin-block: 1rem;
+
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+a {
+    color: var(--very-dark-blue);
+
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--soft-orange);
+    }
+}
+
+nav ul {
+    margin-block-start: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-block-end: 2.5rem;
+
+    .logo {
+        height: 2em;
+    }
+    button {
+        background: none;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background: var(--soft-orange);
+        }
+    }
+    .mainNav {
+        display: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 100%;
+    background: hsla(var(--hsl-very-dark-blue), 0.5);
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        padding: 2rem 1rem;
+
+        background: white;
+
+        .menu-close {
+            margin-inline-start: auto;
+        }
+    }
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .mainArticle {
+        button {
+            padding: 0.7rem 2rem;
+
+            background: var(--soft-red);
+
+            border: none;
+
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                background: var(--very-dark-blue);
+            }
+        }
+    }
+
+    aside {
+        padding: 1.5rem 1rem;
+        padding-block-end: 0;
+        background: var(--very-dark-blue);
+
+        color: var(--off-white);
+
+        h2 {
+            margin-block-end: 1rem;
+            color: var(--soft-orange);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            a {
+                color: white;
+
+                &:hover,
+                &:focus {
+                    color: var(--soft-orange);
+                }
+            }
+        }
+
+        .aside--article {
+            padding-block: 1rem;
+
+            border-bottom: 1px solid var(--dark-greyish-blue);
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
     }
 }

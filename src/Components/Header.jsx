@@ -7,11 +7,13 @@ const Header = () => {
     function Menu() {
         if(active){
             return (
-                <div className="menu">
-                    <button onClick={() => setActive(false)}>
-                        <img src={MenuCloseIcon} alt="Close Menu Icon" className='menu-close'/>
-                    </button>
-                    <Nav classes="menuNav" />
+                <div className="overlay">
+                    <div className="menu">
+                        <button onClick={() => setActive(false)} className='menu-close'>
+                            <img src={MenuCloseIcon} alt="Close Menu Icon" />
+                        </button>
+                        <Nav classes="menuNav" />
+                    </div>
                 </div>
             )
         }

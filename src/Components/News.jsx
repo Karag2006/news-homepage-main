@@ -6,7 +6,7 @@ const News = ({articles}) => {
             <h2>New</h2>
             {articles.map((article) => (
                 <div className="aside--article" key={article.title}>
-                    <h3>{article.title}</h3>
+                    <h3><a href="#">{article.title}</a></h3>
                     <p>{article.text}</p>
                 </div>
             ))}
