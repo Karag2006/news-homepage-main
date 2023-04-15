@@ -9,7 +9,7 @@ const TopArticles = () => {
                     <img src={`/images/${article.picture}`} alt="" className="article--picture" />
                     <div className="article--preview">
                         <h2 className="article--number">{article.number}</h2>
-                        <h3 className="article--title">{article.title}</h3>
+                        <h3 className="article--title"><a href="">{article.title}</a></h3>
                         <p>{article.text}</p>
                     </div>
                 </div>
