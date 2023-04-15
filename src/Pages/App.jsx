@@ -3,38 +3,10 @@ import React from 'react'
 const App = () => {
   return (
     <main>
-  <header>
-    <img src="" alt="Logo" className='logo'/>
-    <button>
-        <img src="" alt="Burger Menu Image" className='burger'/>
-    </button>
-    <nav className='mainNav'>
-      <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
-    </nav>
-    <div className="menu">
-      <button>
-          <img src="" alt="Close Manu Image" className='menu-close'/>
-      </button>
-      <nav className='menuNav'>
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  
   <div className="content">
     <div className="content--focus">
-      <img src="" alt="Focus Article Picture" className="content--focus-image" />
+      <img src="" alt="Main Article Picture" className="content--focus-image" />
       <div className='mainArticle'>
         <h1>The Bright Future of Web 3.0?</h1>
         <div>
