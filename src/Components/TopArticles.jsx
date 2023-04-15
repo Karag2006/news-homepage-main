@@ -5,7 +5,7 @@ const TopArticles = () => {
     return (
         <div className="topArticles">
             {topArticles.map((article) => (
-                <div className="article">
+                <div className="article" key={article.number}>
                     <img src={`/images/${article.picture}`} alt="" className="article--picture" />
                     <div className="article--preview">
                         <h2 className="article--number">{article.number}</h2>
