@@ -1,3 +1,7 @@
 export {default as Footer} from './Footer.jsx'
 export {default as Header} from './Header.jsx'
 export {default as Nav} from './Nav.jsx'
+export {default as MainContent} from './MainContent.jsx'
+export {default as MainArticle} from './MainArticle.jsx'
+export {default as News} from './News.jsx'
+export {default as TopArticles} from './TopArticles.jsx'
